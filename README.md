@@ -46,24 +46,30 @@ The solution implements a PySpark-based data pipeline with the following compone
 - `analysis_top_color_by_year`: Revenue analysis results
 - `analysis_avg_lead_time_by_category`: Lead time analysis results
 
-## Implementation
+## Running the Pipeline
 
-### Main Pipeline (PySpark)
+### Primary Implementation - PySpark Version
+The main pipeline is implemented in `data_pipeline.py` using PySpark for distributed processing:
+
 ```bash
-# Install dependencies
+# Install required dependencies
 python3 -m pip install pyspark pandas numpy
 
-# Run the main pipeline
+# Run the main PySpark pipeline
 python3 data_pipeline.py
 ```
 
-### Alternative Implementation (Pandas)
+### Alternative Implementation - Pandas Version
+For environments without Java/Spark setup, use `data_pipeline_pandas.py` as an alternative:
+
 ```bash
 # Run the pandas-based alternative
 python3 data_pipeline_pandas.py
 ```
 
 ### Quick Demo
+For a complete demonstration of the pipeline:
+
 ```bash
 ./demo_pipeline.sh
 ```
