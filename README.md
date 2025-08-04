@@ -46,26 +46,35 @@ The solution implements a PySpark-based data pipeline with the following compone
 - `analysis_top_color_by_year`: Revenue analysis results
 - `analysis_avg_lead_time_by_category`: Lead time analysis results
 
-## Execution
+## Implementation
+
+### Main Pipeline (PySpark)
+```bash
+# Install dependencies
+python3 -m pip install pyspark pandas numpy
+
+# Run the main pipeline
+python3 data_pipeline.py
+```
+
+### Alternative Implementation (Pandas)
+```bash
+# Run the pandas-based alternative
+python3 data_pipeline_pandas.py
+```
 
 ### Quick Demo
 ```bash
 ./demo_pipeline.sh
 ```
 
-### Manual Execution
-```bash
-# Install dependencies
-python3 -m pip install pyspark pandas numpy
+## Results
 
-# Run the pipeline
-python3 data_pipeline_pandas.py
-```
+The pipeline successfully processes all requirements and generates comprehensive analysis results:
 
-### Alternative PySpark Version
-```bash
-# Requires Java 8+ installed
-python3 data_pipeline.py
-```
+- **Product Data Enhancement**: Complete product categorization with NULL value handling
+- **Sales Order Processing**: Business day calculations and revenue analysis
+- **Analytical Insights**: Revenue trends by color/year and lead time analysis by category
+- **Data Quality**: Proper schema enforcement and data type validation
 
-The pipeline processes all requirements and generates analysis results for the specified business questions.
+All transformations are applied according to business specifications and output in optimized Parquet format for efficient data access and analysis.
