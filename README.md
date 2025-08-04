@@ -4,6 +4,10 @@
 
 This data pipeline solution processes three CSV files containing product and sales order data, applying transformations and analysis as specified in the technical requirements.
 
+Main Pipeline: **data_pipeline.py**
+
+**We have a another alternative with Pandas for environments without Java/Spark setup, use `data_pipeline_pandas.py` as an alternative**
+
 ## Technical Implementation Summary
 
 ### Data Processing Technologies
