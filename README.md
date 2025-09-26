@@ -7,6 +7,9 @@ I implemented a comprehensive data pipeline solution that processes three CSV fi
 **Main Implementation**: `data_pipeline.py` (PySpark)  
 **Alternative Implementation**: `data_pipeline_pandas.py` (for environments without Java/Spark setup)
 
+<img width="560" height="549" alt="image" src="https://github.com/user-attachments/assets/b7bb85f8-f542-4a48-9166-5bcf31b62cf2" />
+
+
 ## Data Architecture by Layer
 
 ### Layer 1: RAW DATA (Original CSV files)
