@@ -1,0 +1,18 @@
+{
+  "analysis_timestamp": "2025-09-25T21:54:37.614845",
+  "total_orders_analyzed": 128508,
+  "valid_orders_for_color_analysis": 128508,
+  "valid_orders_for_leadtime_analysis": 83664,
+  "years_analyzed": [
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "categories_analyzed": [
+    "Bikes",
+    "Components",
+    "Accessories",
+    "Clothing"
+  ]
+}

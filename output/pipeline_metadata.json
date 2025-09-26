@@ -1,0 +1,91 @@
+{
+  "pipeline_run_time": "2025-09-25T21:54:24.176886",
+  "config": {
+    "products_file": "tables/products (1).csv",
+    "sales_order_header_file": "tables/sales_order_header (1).csv",
+    "sales_order_detail_file": "tables/sales_order_detail (1).csv",
+    "output_dir": "output",
+    "error_handling_mode": "lenient",
+    "date_format_fallback": "%Y-%m",
+    "max_memory_usage_gb": 4.0,
+    "min_expected_rows": {
+      "products": 100,
+      "sales_order_header": 1000,
+      "sales_order_detail": 5000
+    },
+    "category_mappings": {
+      "Clothing": [
+        "Gloves",
+        "Shorts",
+        "Socks",
+        "Tights",
+        "Vests"
+      ],
+      "Accessories": [
+        "Locks",
+        "Lights",
+        "Headsets",
+        "Helmets",
+        "Pedals",
+        "Pumps"
+      ],
+      "Components": [
+        "Wheels",
+        "Saddles"
+      ]
+    }
+  },
+  "validation_results": {
+    "raw_products": {
+      "rows": 303,
+      "columns": 15,
+      "memory_usage_mb": 0.13402271270751953,
+      "null_columns": []
+    },
+    "raw_sales_order_header": {
+      "rows": 31465,
+      "columns": 8,
+      "memory_usage_mb": 6.421687126159668,
+      "null_columns": []
+    },
+    "raw_sales_order_detail": {
+      "rows": 121317,
+      "columns": 6,
+      "memory_usage_mb": 5.553577423095703,
+      "null_columns": []
+    },
+    "publish_orders": {
+      "rows": 121317,
+      "columns": 15,
+      "memory_usage_mb": 31.238276481628418,
+      "null_columns": []
+    }
+  },
+  "processing_stats": {
+    "store_products.parquet": {
+      "rows": 303,
+      "columns": 15,
+      "file_size_bytes": 19507
+    },
+    "store_sales_order_header.parquet": {
+      "rows": 31465,
+      "columns": 8,
+      "file_size_bytes": 603491
+    },
+    "store_sales_order_detail.parquet": {
+      "rows": 121317,
+      "columns": 6,
+      "file_size_bytes": 1337056
+    },
+    "publish_product.parquet": {
+      "rows": 303,
+      "columns": 15,
+      "file_size_bytes": 19550
+    },
+    "publish_orders.parquet": {
+      "rows": 121317,
+      "columns": 15,
+      "file_size_bytes": 2152262
+    }
+  }
+}
